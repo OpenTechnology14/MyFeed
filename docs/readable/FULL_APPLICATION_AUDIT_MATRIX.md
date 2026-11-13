@@ -1,6 +1,6 @@
 # Full application audit matrix
 
-Baseline: 2026-10-04. This is MyFeed's release-audit inventory. Work priority stays in the [proposal queue](PROPOSAL_WORK_QUEUE.md). The structure follows the inspected Hybrid Creator Platform full audit/module inventories and OpenTechnologyApp full application path audit: identify each surface, its owner, existing evidence, and required next proof. Their application data, credentials, infrastructure, and pass results are not part of MyFeed's evidence.
+Baseline: 2026-10-04. This is MyFeed's release-audit inventory. Work priority stays in the [proposal queue](PROPOSAL_WORK_QUEUE.md). The structure follows the inspected full audit/module inventories and full application path audit of two sibling internal applications: identify each surface, its owner, existing evidence, and required next proof. Their application data, credentials, infrastructure, and pass results are not part of MyFeed's evidence.
 
 **Completion rule:** implementation, layout approval, local tests, browser checks, and live-provider acceptance are separate facts. A rendered page, saved connection, or mocked response cannot close an end-to-end audit. Required proof includes success and failure/recovery, persistence, relevant UI/API boundaries, and cleanup. No full application audit was executed by writing this inventory.
 

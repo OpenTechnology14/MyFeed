@@ -1,6 +1,6 @@
 # MyFeed — agent context
 
-MyFeed is a single-user local media reader built from patterns inspected in `/Users/alexpro/Downloads/OpenTechnologyApp`. Its sources are independent; never modify or import that application's live data or credentials.
+MyFeed is a single-user local media reader whose UI/profile/settings/data-ownership and encrypted-connection patterns were adapted from a sibling internal application. Its sources are independent; never modify or import that application's live data or credentials.
 
 This file is the canonical agent context. Run `npm run docs:generate` after changing it. `AGENTS.md` and files under `docs/agent-registries/` are generated; never hand-edit those outputs. `npm run docs:check` verifies synchronization.
 
@@ -42,7 +42,7 @@ This file is the canonical agent context. Run `npm run docs:generate` after chan
 - `src/App.tsx` and `src/components/`: reader, background views, profile/settings, accessible dialogs.
 - `docs/readable/`: human-readable product/architecture/integration documents. `scripts/generate-docs.ts` generates agent context, route registry, and documentation matrix.
 - `docs/readable/PROPOSAL_WORK_QUEUE.md`: canonical ordered proposal queue with stable PROP IDs, dependencies, scope, and acceptance criteria. Keep proposed work distinct from implementation, layout approval, and provider evidence; local release precedes optional/hosted tracks.
-- `docs/readable/PROPOSAL_DASHBOARD.md` and `proposal-dashboard.html`: maintained Testing workflow and dated browsable snapshot. Per-item Work view/Next step come from the canonical queue; presentation never grants execution, provider or paid-AI permission. Refresh source/receipt after queue changes.
+- `docs/readable/PROPOSAL_DASHBOARD.md`: maintained Testing workflow tracker. Per-item Work view/Next step come from the canonical queue; presentation never grants execution, provider or paid-AI permission. The browsable HTML snapshot and its cross-project source (`proposal-dashboard.html`, `proposal-dashboard-snapshot.json`, `assets/proposal-dashboard-source.html`) are not carried into this public release — they embedded another internal project's proposal data alongside MyFeed's own. Regenerate a MyFeed-only version if that artifact is wanted again.
 - `docs/readable/CUSTOMIZATION_LIST.md` and `FEATURE_LIST.md`: maintained product inventory/backlog with stable customization and feature IDs. Per-feed item text limits are implemented in shared/text.ts: compatible default, word or grapheme character budgets. They affect previews only; filtering/search/AI retain originals.
 - `docs/readable/CLICK_MATRIX.md` and `FEATURE_MATRIX.md`: maintained interaction and implementation/evidence baselines. Update linked IDs, statuses, paths, and coverage when behavior changes; distinguish proposed controls from implemented ones and local/mocked checks from live proof.
 - `docs/readable/CONNECTION_MATRIX.md`, `FULL_APPLICATION_AUDIT_MATRIX.md`, `API_AUDIT_MATRIX.md`, and `VERIFICATION_MATRIX.md`: maintained setup, component/capability audit, route scenario, and change-to-check contracts. Keep evidence separate from build status and link gaps to the existing proposal queue. Connection-first configuration and local item editing are implemented locally; live account/provider evidence and optional tracks remain separate.
@@ -65,7 +65,7 @@ Run `npm run verify` after code changes; run `npm run test:e2e` for reader/setup
 
 For manual browser clicks, stop normal servers and use `npm run test:manual` with `docs/readable/MANUAL_TESTING_WORKFLOW.md`. Its marked Vite proxy and verified isolated API use a fresh temporary store. The generated `docs/agent-registries/CLICK_TREE_MANUAL_CHECKLIST.md` derives interaction groups from CLICK_MATRIX.md; record only executed substeps in MANUAL_TEST_RESULTS.md, including blocked checks and cleanup. A generated checklist is not execution evidence.
 
-Read existing code before changes. Keep readable documentation synchronized with relevant code changes. Do not spawn subagents unless the user or applicable instructions explicitly request delegation. Do not install extra plugins or copy infrastructure from OpenTechnologyApp without a concrete need.
+Read existing code before changes. Keep readable documentation synchronized with relevant code changes. Do not spawn subagents unless the user or applicable instructions explicitly request delegation. Do not install extra plugins or copy infrastructure from that sibling application without a concrete need.
 
 ## Skills
 

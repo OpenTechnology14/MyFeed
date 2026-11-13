@@ -4,7 +4,7 @@
 **Type:** Review finding. **No code changes accompany this document.**
 
 **Question being answered:** given OpenTechApp supplies a working `t3-api/v1` (per
-[T3-MCP-01](https://github.com/OpenTechnology14/OpenTechnologyApp/blob/main/docs/proposals/T3-MCP-01.md)),
+T3-MCP-01 (a sibling internal coordination project)),
 how close is MyFeed to a working MVP test of: Questions shown as feed cards, inline A/B/C
 answers, and a simple Idea-intake form? This extends
 [T3-UI-01](T3-UI-01.md)'s phase 1, scoped to the smallest slice that would actually prove the

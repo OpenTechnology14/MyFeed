@@ -38,9 +38,9 @@ Credentials are encrypted using AES-256-GCM with a 32-byte locally generated key
 
 Outbound HTTP requests require public HTTPS endpoints, standard port 443, no embedded credentials, DNS resolution pinned to a checked public IP, a 20-second deadline, at most five redirects, and a 2 MB response cap. Authenticated cross-origin redirects fail. IMAP connects only to a checked public address at TLS port 993, retains the hostname for certificate verification, uses read-only mailbox locks, UIDVALIDITY-scoped IDs, latest-100 metadata and bounded 100-UID incremental/older ranges, skips messages above 1 MB, and does not mark mail as Seen.
 
-## OpenTechnologyApp provenance
+## Sibling-project provenance
 
-The following files were inspected in `/Users/alexpro/Downloads/OpenTechnologyApp`; MyFeed adapts their patterns independently and does not reuse its production store or secrets.
+The following files were inspected in a sibling internal application; MyFeed adapts their patterns independently and does not reuse its production store or secrets.
 
 | Reference                                                                                               | Pattern adopted                                                                                                 | MyFeed location                                                         |
 | ------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- |

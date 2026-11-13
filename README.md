@@ -129,10 +129,9 @@ Mention alerts are configured per feed with an opt-in switch and explicit @handl
 
 Connections-first setup (PROP-027) and local item editing (PROP-028) are implemented. Setup links collected sources to feeds and opens downstream alert/AI configuration. Item editing changes a local display copy; originals remain available for filtering, alerts and AI. The [proposal queue](docs/readable/PROPOSAL_WORK_QUEUE.md#solastra-completion-boundary) separates completed local work from pending approval, live-account evidence and conditional future builds.
 
-## Proposal dashboard
+## Proposal queue
 
-[Open the proposal dashboard](docs/readable/proposal-dashboard.html) to choose MyFeed or
-Hybrid Platform, inspect Testing and remaining features, and prepare an agent work request.
-The [dashboard workflow and refresh tracker](docs/readable/PROPOSAL_DASHBOARD.md) explains
-source ownership and snapshot limits. The [canonical proposal queue](docs/readable/PROPOSAL_WORK_QUEUE.md)
-retains authorization, order and acceptance criteria.
+The [canonical proposal queue](docs/readable/PROPOSAL_WORK_QUEUE.md) retains authorization,
+order and acceptance criteria for MyFeed's own work. A browsable cross-project dashboard
+existed in the predecessor private repo; it isn't carried forward here since it embedded
+another internal project's proposal data, which doesn't belong in a public release.

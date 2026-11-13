@@ -1,6 +1,6 @@
 # Manual UI testing workflow
 
-MyFeed has automated Playwright UI workflows in `tests/e2e/`, plus this manual layer for an operator or an agent driving the browser. Adapted from OpenTechnologyApp's `docs/readable/MANUAL_TESTING_WORKFLOW.md` and generated click tree, inspected 2026-10-12. Only the testing pattern was reused; no infrastructure, live data, accounts or credentials were imported.
+MyFeed has automated Playwright UI workflows in `tests/e2e/`, plus this manual layer for an operator or an agent driving the browser. Adapted from a sibling internal application's manual testing workflow and generated click tree, inspected 2026-10-12. Only the testing pattern was reused; no infrastructure, live data, accounts or credentials were imported.
 
 Use the [generated click checklist](../agent-registries/CLICK_TREE_MANUAL_CHECKLIST.md) with stable CLICK IDs, [click matrix](CLICK_MATRIX.md), and [verification matrix](VERIFICATION_MATRIX.md). The checklist covers interaction groups, including proposed/unsupported and CLI rows; it does not claim every DOM element is instrumented. `docs:generate` rebuilds it and `docs:check` catches drift. Execution results belong in [MANUAL_TEST_RESULTS.md](MANUAL_TEST_RESULTS.md) and [IMPLEMENTATION.md](IMPLEMENTATION.md), not in the generated checklist.
 

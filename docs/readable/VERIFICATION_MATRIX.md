@@ -1,6 +1,6 @@
 # Verification matrix
 
-Baseline: 2026-10-04. Use this change-to-check mapping with the [full application audit](FULL_APPLICATION_AUDIT_MATRIX.md). Following Hybrid Creator Platform's verification structure, each row states both required proof and its limits. OpenTechnologyApp's path-audit approach supplies the UI/API/persistence/recovery/cleanup dimensions. Commands and boundaries below are specific to MyFeed.
+Baseline: 2026-10-04. Use this change-to-check mapping with the [full application audit](FULL_APPLICATION_AUDIT_MATRIX.md). Following a sibling project's verification structure, each row states both required proof and its limits. Another sibling project's path-audit approach supplies the UI/API/persistence/recovery/cleanup dimensions. Commands and boundaries below are specific to MyFeed.
 
 ## Checks by changed area
 

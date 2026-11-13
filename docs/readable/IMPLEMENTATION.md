@@ -1,6 +1,6 @@
 # Implementation record
 
-Date: 2026-10-04. User chose 5 feeds. Connection default: 3 per feed. Reference project inspected: `/Users/alexpro/Downloads/OpenTechnologyApp`.
+Date: 2026-10-04. User chose 5 feeds. Connection default: 3 per feed. Reference project inspected: a sibling internal application.
 
 ## Current status — 2026-10-08
 
@@ -162,7 +162,7 @@ Validation: `npm run verify` passed build/type checking, 37 local tests, and doc
 
 ## Connection-first requirements, final item-edit proposal, and audit matrices
 
-On 2026-10-04, inspected the documentation structures in Hybrid Creator Platform (`docs/FULL_APPLICATION_AUDIT_MATRIX.md`, `docs/agent/MODULE-ITEM-MATRIX.md`, and `docs/agent/VERIFICATION-MATRIX.md`) and OpenTechnologyApp (`docs/readable/FULL_APPLICATION_AUDIT_MATRIX.md`) read-only. Added MyFeed's [connection matrix](CONNECTION_MATRIX.md), [full application audit](FULL_APPLICATION_AUDIT_MATRIX.md), [API audit](API_AUDIT_MATRIX.md), and [verification matrix](VERIFICATION_MATRIX.md). These cover configuration entry/ownership/readiness, components and all 35 feature IDs, the 13 current API method/path pairs, required scenarios, existing evidence, and next proof. The other applications' data, credentials, infrastructure, and pass results were not imported.
+On 2026-10-04, inspected the documentation structures in two sibling internal projects (their own full-application-audit, module-item and verification matrices) read-only. Added MyFeed's [connection matrix](CONNECTION_MATRIX.md), [full application audit](FULL_APPLICATION_AUDIT_MATRIX.md), [API audit](API_AUDIT_MATRIX.md), and [verification matrix](VERIFICATION_MATRIX.md). These cover configuration entry/ownership/readiness, components and all 35 feature IDs, the 13 current API method/path pairs, required scenarios, existing evidence, and next proof. The other applications' data, credentials, infrastructure, and pass results were not imported.
 
 Recorded the requested direction that all posts, alerts, and features go through Connections first to configure. PROP-027 / FEAT-034 / CUST-021 / CLICK-042–043 tracks the unified setup journey. Source configuration already uses connections; current alert configuration remains in Customize filters and AI in Settings. Those gaps remain explicitly requested work. Per-feed scope, local profile/appearance, source capacity, read-only ingestion, and manual AI boundaries remain intact.
 
@@ -303,7 +303,7 @@ Final validation: `npm run verify` passed build, **108 tests in 16 files**, and 
 
 ## Manual UI click testing — 2026-10-12
 
-Inspected OpenTechnologyApp's TESTING.md, manual testing workflow and generated click tree read-only. Adapted its scenario/checklist/evidence pattern to MyFeed; no infrastructure, live data or credentials were copied. Added `npm run test:manual`, a guarded real-backend temporary workspace with port refusal, unique test marker, direct API and Vite proxy marker verification, browser request tagging, drained shutdown and normal store/key fingerprint comparison. Added a documented priority sequence, generated checklist for all 65 existing CLICK interaction groups, and a dated execution ledger. Checklist generation participates in docs:generate/docs:check; it does not assert complete DOM instrumentation or execution.
+Inspected a sibling internal application's TESTING.md, manual testing workflow and generated click tree read-only. Adapted its scenario/checklist/evidence pattern to MyFeed; no infrastructure, live data or credentials were copied. Added `npm run test:manual`, a guarded real-backend temporary workspace with port refusal, unique test marker, direct API and Vite proxy marker verification, browser request tagging, drained shutdown and normal store/key fingerprint comparison. Added a documented priority sequence, generated checklist for all 65 existing CLICK interaction groups, and a dated execution ledger. Checklist generation participates in docs:generate/docs:check; it does not assert complete DOM instrumentation or execution.
 
 Actually clicked fictional setup/linking, reader/article save/read/reload, conversations and unread message filtering, search, mute/filter explanations, Saved access to excluded originals, local title/body save/reload/original/reset, source post log, connection health/rename/background/pause/reload/removal cancellation/Activity, canceled feed creation and second-feed sharing/reload. Full steps, partial groups, artifacts and limitations are in [MANUAL_TEST_RESULTS.md](MANUAL_TEST_RESULTS.md). No live provider, paid AI or message submission occurred. Manual source/filter/reader/edit scope includes named substeps of CLICK-001–004, 006–014, 017–018, 021–026, 044–048.
 
@@ -315,7 +315,7 @@ Final validation: `npm run verify` passed production build/type checking, **111 
 
 ## Proposal visual and Testing view — 2026-10-12
 
-Owner requested the Hybrid Platform proposal selector and Testing option for MyFeed. Added
+Owner requested a cross-project proposal selector and Testing option for MyFeed. Added
 one Work view and Next step to each of the existing 35 item definitions, a queue Testing
 policy and linked PROPOSAL_DASHBOARD.md tracker. No item order, stable ID, dated disposition,
 acceptance condition or local implementation status changed. Work focus is 11 Testing
@@ -325,7 +325,7 @@ acceptance condition or local implementation status changed. Work focus is 11 Te
 Source-derived conversation selector switches projects and work sections, filters Testing
 subgroups, exposes selected status/proof limits/dependencies/next step and saves selection.
 Browser DOM inspection verified MyFeed's eleven-item view, empty leftover-feature group,
-PROP-031 details and reload persistence; Hybrid's nine-item leftover-feature subgroup and
+PROP-031 details and reload persistence; the other project's nine-item leftover-feature subgroup and
 P-056 selection also passed. 736px/360px viewport checks had no horizontal overflow (704px/
 313px inner content width). Native window positioning could not run because the Mac was
 locked; no physical display acceptance is claimed. No discussion submission, account check,
@@ -333,7 +333,7 @@ provider API, publishing, paid AI or MyFeed application/store mutation occurred.
 
 Documentation-only checks: npm run docs:generate and npm run docs:check passed; all 35 ordered
 IDs match HEAD, each has exactly one view/next-step, dated dispositions match HEAD, 50 local
-links/anchors resolve and git diff --check passes. Hybrid's required make test reached 100%,
+links/anchors resolve and git diff --check passes. The other project's required make test reached 100%,
 exit 0; queue/lane and generated-registry checks passed. MyFeed runtime/E2E gates were not
 rerun because no runtime/reader/setup code changed; these checks do not close live gates.
 
@@ -343,7 +343,7 @@ Owner asked to work the selector into each project's docs and referenced an agen
 Added browsable `docs/readable/proposal-dashboard.html`, editable source under `assets/` and
 source-hash/count receipt; linked these from README, the canonical queue and dashboard guide.
 Canonical CLAUDE context now names the dashboard/Testing contract and regenerated AGENTS agrees.
-The Hybrid counterpart is linked from its docs index/queue/agent context. Each page defaults to
+The other project's counterpart was linked from its own docs index/queue/agent context. Each page defaults to
 its own project; its project picker can compare both dated documentation snapshots. Automatic
 refresh remains future scope. Prepare work request is read-only copyable text, not task messaging.
 
@@ -351,12 +351,20 @@ Both saved pages rendered in the browser. MyFeed's empty remaining-feature filte
 handoff, selected PROP-031 survives reload and request preparation preserves the proposal/next
 step and explicit permission gates. Both source-hash receipts match canonical queues; 73/35
 unique ordered IDs and all work counts reconcile; 96 documentation links resolve. MyFeed docs
-generate/check and git diff --check pass. Hybrid's required full make test reaches 100%, exit 0,
+generate/check and git diff --check pass. The other project's required full make test reaches 100%, exit 0,
 and generated docs/queue-lane checks pass. No app/store/provider/E2E workflow or Git merge was
 performed; documentation integration does not establish provider or physical acceptance.
 
 Merge check on 2026-10-12: `npm run verify` passed the production build, 111 tests in
 16 files, and generated-document synchronization. The dashboard source and receipt
-reconcile 35 unique MyFeed IDs and 73 unique Hybrid IDs, all work-view counts, and
+reconcile 35 unique MyFeed IDs and 73 unique IDs from the other project, all work-view counts, and
 the MyFeed queue SHA-256. `git diff --check` passed. The dashboard is documentation;
 no live-provider or app workflow was exercised for this merge.
+
+On 2026-11-14, as part of the public-release name-drop/leakage scrub, removed
+`docs/readable/proposal-dashboard.html`, `proposal-dashboard-snapshot.json`, and
+`docs/readable/assets/proposal-dashboard-source.html` from this public repository: they
+embedded another internal project's full proposal dataset (73 items, implementation detail
+included) alongside MyFeed's own, which is not appropriate to ship publicly. `PROPOSAL_DASHBOARD.md`,
+`README.md`, and `PROPOSAL_WORK_QUEUE.md` were updated to drop the dead links. MyFeed's own
+Work-view counts table was preserved. No app code, tests, or MyFeed-only documentation changed.

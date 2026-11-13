@@ -50,7 +50,7 @@ The production app and these five review pages are served locally at port **3188
 
 ## Testing and proposal visual
 
-**Owner follow-up (2026-10-12):** add the proposal selector and Testing option used in Hybrid
+**Owner follow-up (2026-10-12):** add the proposal selector and Testing option used in a sibling internal project
 Creator Platform. This is documentation/work selection for the existing 35 items, not another
 feature backlog or permission to start conditional work. Agent assignment for this bounded
 follow-up: `gpt-6.1-sol` / `high` — source-based queue classification and responsive visual review.
@@ -75,7 +75,7 @@ The selector offers **All testing**, **Mainly acceptance**, and **Remaining feat
 subgroups are shown honestly. Selecting a proposal exposes its current proof limits and next
 step; discussing a slice does not run tests, publish, use credentials or spend on AI.
 
-[Open the proposal dashboard](proposal-dashboard.html). [Dashboard tracking and refresh](PROPOSAL_DASHBOARD.md)
+[Dashboard tracking and refresh](PROPOSAL_DASHBOARD.md)
 records the checked-in snapshot, local work-request handoff and proof.
 
 ## Queue by item
