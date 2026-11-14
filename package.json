@@ -1,0 +1,52 @@
+{
+  "name": "myfeed",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently -k -n api,web \"tsx watch server/index.ts\" \"vite\"",
+    "build": "tsc --noEmit && vite build",
+    "start": "NODE_ENV=production tsx server/index.ts",
+    "test": "vitest run",
+    "test:e2e": "playwright test",
+    "test:manual": "tsx scripts/manual-testing.ts",
+    "docs:generate": "tsx scripts/generate-docs.ts",
+    "docs:check": "tsx scripts/generate-docs.ts --check",
+    "format:check": "prettier --check .",
+    "verify": "npm run build && npm test && npm run docs:check",
+    "prod": "npm run build && npm start",
+    "backup": "tsx scripts/backup.ts",
+    "local": "tsx scripts/local.ts"
+  },
+  "dependencies": {
+    "@radix-ui/react-dialog": "^1.1.15",
+    "express": "^4.21.2",
+    "imapflow": "^1.0.0",
+    "ipaddr.js": "^2.2.0",
+    "lucide-react": "^0.577.0",
+    "mailparser": "^3.7.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "rss-parser": "^3.13.0",
+    "undici": "^7.29.0",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.60.0",
+    "@types/express": "^4.17.21",
+    "@types/mailparser": "^3.4.6",
+    "@types/node": "^25.5.0",
+    "@types/react": "^18.3.1",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.1",
+    "concurrently": "^9.1.0",
+    "prettier": "^3.6.2",
+    "tsx": "^4.19.2",
+    "typescript": "~5.6.2",
+    "vite": "^6.0.5",
+    "vitest": "^4.1.6"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  }
+}

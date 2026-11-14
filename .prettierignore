@@ -1,0 +1,12 @@
+node_modules/
+dist/
+data/
+test-results/
+playwright-report/
+*.tsbuildinfo
+
+# Generated documentation and snapshots (produced by scripts/generate-docs.ts
+# and scripts/data-matrix.ts); formatting is owned by the generator, not Prettier.
+docs/agent-registries/
+docs/readable/
+AGENTS.md
